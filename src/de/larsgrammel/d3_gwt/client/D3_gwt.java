@@ -3,7 +3,6 @@ package de.larsgrammel.d3_gwt.client;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.JavaScriptObject;
 import com.google.gwt.core.client.JsArrayNumber;
-import com.google.gwt.dom.client.Document;
 import com.google.gwt.user.client.DOM;
 import com.google.gwt.user.client.Element;
 import com.google.gwt.user.client.ui.RootPanel;
@@ -15,9 +14,7 @@ public class D3_gwt implements EntryPoint {
 
 		// assume this is in a widget class: create DOM element & attach to
 		// parent
-		String uid = Document.get().createUniqueId();
 		Element div = DOM.createDiv();
-		div.setId(uid);
 		parent.appendChild(div);
 
 		// load data from somewhere (here randomly generated)
